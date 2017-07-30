@@ -1,8 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <vector>
 #include "screen.h"
 #include "crank_flashlight.h"
+#include "creep.h"
 
 class Graphics;
 
@@ -26,10 +28,27 @@ private:
 	/// Nothing  currently
 	/// </summary>
 	/// <param name="elapsedTime">The elapsed time.</param>
-	void update(float elapsedTime);
+	void update(float elapsedTime, Graphics & graphics);
+	
+	/// <summary>
+	/// Sets the state.
+	/// </summary>
+	/// <param name="state">The state.</param>
+	void setState(int state);
 
-	Screen screen;
+	Screen title_screen;
+	Screen gameover_screen;
+	Screen game_screen;
 	Crank_Flashlight flashlight;
+	
+	//Lets have an array of creeps!
+	//Creep creep;
+	std::vector<Creep *> creeps;
+
+	float _timeElapsed;
+	float _randomTimeCreateCreep;
+
+	int _state;
 };
 
 #endif // !GAME_H

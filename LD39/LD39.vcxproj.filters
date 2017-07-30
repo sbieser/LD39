@@ -33,6 +33,15 @@
     <ClCompile Include="source\src\crank_flashlight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\src\sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\src\animated_sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\src\creep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\headers\game.h">
@@ -53,6 +62,15 @@
     <ClInclude Include="source\headers\crank_flashlight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\headers\sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\headers\animated_sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\headers\creep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="content\light\light_off.png">
@@ -61,8 +79,27 @@
     <Image Include="content\light\lighted_area.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="content\backgrounds\test_bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\sprites\creep_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\backgrounds\better_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\backgrounds\game_over.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="content\backgrounds\title_screen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="content\light\Untitled.xcf" />
+    <None Include="content\backgrounds\test_bg.xcf" />
+    <None Include="content\light\light_off.xcf" />
+    <None Include="content\sprites\creep_1.xcf" />
+    <None Include="content\backgrounds\better_background.xcf" />
   </ItemGroup>
 </Project>

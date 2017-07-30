@@ -8,7 +8,17 @@ class Graphics;
 
 class Crank_Flashlight {
 public:
-	Crank_Flashlight();
+	Crank_Flashlight();	
+	/// <summary>
+	/// Initializes a new instance of the <see cref="Crank_Flashlight"/> class.
+	/// </summary>
+	/// <param name="graphics">The graphics.</param>
+	/// <param name="filepathOn">The filepath on.</param>
+	/// <param name="filepathOff">The filepath off.</param>
+	/// <param name="width">The width.</param>
+	/// <param name="height">The height.</param>
+	/// <param name="x">The x starting position.</param>
+	/// <param name="y">The y starting position.</param>
 	Crank_Flashlight(Graphics &graphics, const std::string &filepathOn, const std::string &filepathOff, int width, int height, int x, int y);
 	~Crank_Flashlight();
 	void draw(Graphics &graphics);
